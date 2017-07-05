@@ -18,7 +18,7 @@ public final class GenerateId {
                 String randomNum = new Integer(prng.nextInt()).toString();
 
                 //get its digest
-                MessageDigest sha = MessageDigest.getInstance("SHA-256");
+                MessageDigest sha = MessageDigest.getInstance("SHA-1");
                 byte[] result = sha.digest(randomNum.getBytes());
 
                 System.out.println("Random number: " + randomNum);
